@@ -28,11 +28,51 @@
       <p class="lead">A simple calendar app for scheduling your work day</p>
       <p id="currentDay" class="lead"></p>
     </header>
-    <div class="container">
+    <div class="container" id="todoList">
       <!-- Timeblocks go here -->
-    </div>
+      <table class="table table-bordered table-dark">
+        <thead>
+          <tr>
+            <th scope="col">9AM</th>
+            <th scope="col"><form id="todoList-form">
+              <input type="text" class="form-input w-100" id="shopping-input" name="shopping-input" placeholder="Enter item name" />
+            </form></th>
+            <th scope="col"><button type="submit" class="btn btn-primary" id="submitBtn">Submit</button></th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <th scope="row">10AM</th>
+            <td><form id="todoList-form">
+              <input type="text" class="form-input w-100" id="shopping-input" name="shopping-input" placeholder="Enter item name" />
+            </form></td>
+          
+            <td><button type="submit" class="btn btn-primary" id="submitBtn">Submit</button></td>
+          </tr>
+          <tr>
+            <th scope="row">11AM</th>
+            <td><form id="todoList-form">
+              <input type="text" class="form-input w-100" id="shopping-input" name="shopping-input" placeholder="Enter item name" />
+            </form></td>
+            
+            <td> <button type="submit" class="btn btn-primary" id="submitBtn">Submit</button></td>
+          </tr>
+          <tr>
+            <th scope="row">12AM</th>
+            <td><form id="todoList-form">
+              <input type="text" class="form-input w-100" id="shopping-input" name="shopping-input" placeholder="Enter item name" />
+            </form></td>
+           
 
+             <td><button type="submit" class="btn btn-primary" id="submitBtn">Submit</button></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    
+  
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
+    <script src="./script.js"></script>
   </body>
 </html>
