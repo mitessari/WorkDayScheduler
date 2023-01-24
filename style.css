@@ -79,3 +79,7 @@ textarea {
 .table {
   column-width: 10px;
 }
+
+.form-input {
+  background-color: #343a40;
+}
