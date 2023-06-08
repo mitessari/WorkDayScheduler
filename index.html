@@ -28,40 +28,42 @@
       <p class="lead">A simple calendar app for scheduling your work day</p>
       <p id="currentDay" class="lead"></p>
     </header>
-    <div class="container" id="todoList">
+    <div class="container">
       <!-- Timeblocks go here -->
       <table class="table table-bordered table-dark">
-        <thead>
+         <tbody>
           <tr>
-            <th scope="col">9AM</th>
-            <th scope="col"><form id="todoList-form">
-            <input type="text"  class="form-input w-100" id="todo-input" name="todo-input" placeholder="Enter event name"/>
-            </form></th>
-            <th scope="col"><button type="submit" class="btn btn-primary" id="submitBtn">Submit</button></th>
+            <th scope="row" id = "time">9AM</th>
+              <td>
+                <input type="text" class="form-input w-100" id="todo-input" name="todo-input" placeholder="Enter event name" />
+              </td>
+             
+          
+            <td scope="col"><button type="submit" class="btn btn-primary" id="submitBtn">Submit</button></td>
           </tr>
-        </thead>
-        <tbody>
+        
+       
           <tr>
             <th scope="row">10AM</th>
-            <td><form id="todoList-form">
+            <td>
               <input type="text" class="form-input w-100" id="todo-input" name="todo-input" placeholder="Enter event name" />
-            </form></td>
+            </td>
           
             <td><button type="submit" class="btn btn-primary" id="submitBtn">Submit</button></td>
           </tr>
           <tr>
             <th scope="row">11AM</th>
-            <td><form id="todoList-form">
+            <td>
               <input type="text" class="form-input w-100" id="todo-input" name="todo-input" placeholder="Enter event name" />
-            </form></td>
+            </td>
             
             <td> <button type="submit" class="btn btn-primary" id="submitBtn">Submit</button></td>
           </tr>
           <tr>
             <th scope="row">12AM</th>
-            <td><form id="todoList-form">
+            <td>
               <input type="text" class="form-input w-100" id="todo-input" name="todo-input" placeholder="Enter event name" />
-            </form></td>
+            </td>
            
 
              <td><button type="submit" class="btn btn-primary" id="submitBtn">Submit</button></td>

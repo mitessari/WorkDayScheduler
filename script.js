@@ -1,34 +1,38 @@
- var todoList = $("#todoList");
+ //var todoList = $("#todoList");
 var button = $("#submitBtn");
 var todoListForm = $("#todoList-form");
 
+function handleFormSubmit() {
+    
 
-function printTodoData(name) {
-  var projectRowEl = $('<tr>');
-
-  var projectNameTdEl = $('<td>').addClass('p-2').text(name); 
-
-  projectRowEl.append(
-    projectNameTdEl );
-
-
+  
+    // select form element by its `name` attribute and get its value
+    var todoItem = $('input[name="todo-input"]').val();
+  
+  
+  
+    // print to the page
+    todoListForm.append('<li>' + todoItem + '</li>');
+  
+    // clear the form input element
+    $('input[name="todo-input"]').val('');
   }
-
-  function handleProjectFormSubmit(event) {
-    event.preventDefault();
-  var projectName = projectNameInputEl.val().trim();
-  printTodoData(projectName); }
-
-
-  todoListForm.on('submit', handleProjectFormSubmit);
-
-
+  
+  // Create a submit event listener on the form element
+  button.on('submit', handleFormSubmit());
+  
 
 setInterval(
     function () {
         $("#currentDay").text(moment().format(" dddd, DDD MMM YYYY"))
 
     }, 1000)
+
+
+
+    if (condition) {
+        
+    }
 
     // todoListForm.on("submit", function(event){
     //     event.preventDefault();
